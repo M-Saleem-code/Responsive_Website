@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nav bar web</title>
+	<link rel="stylesheet" type="text/css" href="ss.css">
+</head>
+<body>
+<section>
+	<div class="circle"></div>
+	
+	<header>
+
+		<a href="#" class="logo" ><img src="C:\Users\user\OneDrive - Higher Education Commission\Desktop\StarbuckWeb\logo.png">
+			<ul>
+			<li><a href="#">Home</a></li>	
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">What`s New</a></li>
+			<li><a href="#">Contacs Us</a></li>
+			</ul>
+	</header>
+	<div class="content">
+		<div class="textbox">
+			<h2>It` s not just Cofee <br> It`s <span>Starbucks</span></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+			tempor incididuncia deserunt mollit anim id est laborum.  </p>
+			<a href="#">Learn More</a>
+		</div>
+<div class="imgbox">
+	<img src="img1.png" class="star">
+	
+</div>
+</div>
+<ul class="thumb">
+	<li><img src="thumb1.png"onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+	<li><img src="thumb2.png"onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+	<li><img src="thumb3.png"onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+	
+</ul>
+<ul class="sci">
+	<li><a href="#"><img src="facebook.png"></a></li>
+	<li><a href="#"><img src="twitter.png"></a></li>
+	<li><a href="#"><img src="Instagram.png"></a></li>
+
+</ul>
+
+</section>
+<script type="text/javascript">
+	function imgSlider(anything) {
+		document.querySelector('.star').src=anything;
+	}
+	function  changeCircleColor(color) {
+		const circle=document.querySelector('.circle');
+		circle.style.background=color;
+	}
+</script>
+<footer> 
+</footer>
+</body>
+</html>
